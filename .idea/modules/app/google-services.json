@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "256946638378",
+    "firebase_url": "https://autoworkshop-575fb.firebaseio.com",
+    "project_id": "autoworkshop-575fb",
+    "storage_bucket": "autoworkshop-575fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256946638378:android:02abd42555db457b39bd53",
+        "android_client_info": {
+          "package_name": "com.example.autoworkshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256946638378-j1jr9sd88guodc68iq96pj4nd6sdnp2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.autoworkshop",
+            "certificate_hash": "4bb035e753991ed16d43ad65d9b5b95b010b99cb"
+          }
+        },
+        {
+          "client_id": "256946638378-qeol91cva1uu604s83bjppjjns5ql37v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn8AWtaEAEBVXrhdk7KeevL6YFxdkjau0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256946638378-qeol91cva1uu604s83bjppjjns5ql37v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

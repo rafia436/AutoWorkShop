@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aldrich"
+            android:text="Username"
+            android:textColor="#040303"
+            android:textSize="24sp"
+            android:translationX="20dp"
+            tools:translationY="5dp" />
+
+        <EditText
+            android:id="@+id/a_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E4E0E0"
+            android:drawableBottom="@android:color/background_dark"
+            android:ems="10"
+            android:fontFamily="serif-monospace"
+            android:inputType="textPersonName"
+            android:shadowColor="#BAB6B6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:translationX="20dp"
+            android:translationY="0dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aldrich"
+            android:text="Password"
+            android:textColor="#040303"
+            android:textSize="24sp"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+        <EditText
+            android:id="@+id/a_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E4E0E0"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:clickable="true"
+            android:fadingEdge="vertical"
+            android:fontFamily="@font/aldrich"
+            android:text="Forgot your password?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationX="20dp"
+            android:translationY="40dp" />
+
+        <Button
+            android:id="@+id/a_signin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="Sign in"
+            android:textSize="18sp"
+            android:translationX="20dp"
+            android:translationY="50dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="OR"
+            android:textColor="#090909"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationX="20dp"
+            android:translationY="55dp" />
+
+        <Button
+            android:id="@+id/a_signup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="Sign up"
+            android:textSize="18sp"
+            android:translationX="20dp"
+            android:translationY="60dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="Admin"
+        android:textColor="#FF1717"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

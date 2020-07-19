@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "360275876076",
+    "firebase_url": "https://jasautoworkshop.firebaseio.com",
+    "project_id": "jasautoworkshop",
+    "storage_bucket": "jasautoworkshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360275876076:android:c238f2f24da9fe2f546dc9",
+        "android_client_info": {
+          "package_name": "com.example.autoworkshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360275876076-h3ft49vdrmfutaon3km5pine9q2n4nfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw3Bo0aXc83_jMCZ50k_LNpQA3nUZOTrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360275876076-h3ft49vdrmfutaon3km5pine9q2n4nfj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

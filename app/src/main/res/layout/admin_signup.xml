@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="404dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="119dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center|center_horizontal|fill|top"
+        android:paddingLeft="140dp"
+        android:text="Sign Up"
+        android:textColor="#FF0303"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFCFC"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView13">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aldrich"
+            android:text="Username"
+            android:textColor="#040303"
+            android:textSize="24sp"
+            android:translationX="20dp" />
+
+        <EditText
+            android:id="@+id/A_Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E4E0E0"
+            android:drawableBottom="@android:color/background_dark"
+            android:ems="10"
+            android:fontFamily="serif-monospace"
+            android:inputType="textPersonName"
+            android:shadowColor="#BAB6B6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:translationX="20dp"
+            android:translationY="2dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aldrich"
+            android:text="Email Address"
+            android:textColor="#070707"
+            android:textSize="24sp"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+        <EditText
+            android:id="@+id/A_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E4E0E0"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aldrich"
+            android:text="Password"
+            android:textColor="#0C0C0C"
+            android:textSize="24sp"
+            android:translationX="20dp"
+            android:translationY="40dp" />
+
+        <EditText
+            android:id="@+id/A_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E4E0E0"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:translationX="20dp"
+            android:translationY="40dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aldrich"
+            android:text="Phone Number"
+            android:textColor="#130C0C"
+            android:textSize="24sp"
+            android:translationX="20dp"
+            android:translationY="70dp" />
+
+        <EditText
+            android:id="@+id/A_Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E1DFDF"
+            android:ems="10"
+            android:inputType="phone"
+            android:translationX="20dp"
+            android:translationY="70dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="160dp"
+            android:layout_height="61dp"
+            android:background="@android:color/black"
+            android:drawableRight="?attr/selectableItemBackground"
+            android:fontFamily="@font/aldrich"
+            android:text="Complete"
+            android:textAllCaps="false"
+            android:textColor="#FDF8F8"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationX="80dp"
+            android:translationY="140dp" />
+
+        <ImageButton
+            android:id="@+id/A_registerbtn"
+            android:layout_width="80dp"
+            android:layout_height="61dp"
+            android:background="#EF1A1A"
+            android:translationX="230dp"
+            android:translationY="79.3dp"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

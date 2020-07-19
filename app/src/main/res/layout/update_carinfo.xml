@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="620dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/RegistCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="Registeration Card"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/CarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="Car Name"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/EditCarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E4E0E0"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/CarNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/aldrich"
+            android:text="Plate Number"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/EditCarNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E4E0E0"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aldrich"
+            android:text="Inspection Form"
+            android:textColor="#0B0B0B"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/Choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:srcCompat="@android:drawable/ic_menu_upload" />
+
+        <TextView
+            android:id="@+id/Link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F42D2D" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="Car Image"
+            android:textColor="#020202"
+            android:textSize="18sp"
+            tools:translationY="20dp" />
+
+        <ImageButton
+            android:id="@+id/ChooseCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_upload"
+            tools:translationY="20dp" />
+
+        <ImageView
+            android:id="@+id/Carimage"
+            android:layout_width="245dp"
+            android:layout_height="139dp"
+            app:srcCompat="?attr/selectableItemBackground"
+            tools:translationY="30dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="138dp"
+        android:layout_height="58dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="3dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

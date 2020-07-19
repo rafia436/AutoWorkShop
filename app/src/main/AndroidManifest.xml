@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.example.autoworkshop"
+    >
+
+
+    <!-- Allow to connect with internet and to know the current network state -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+
+            android:name="com.example.autoworkshop.AdminPage"
+
+            android:label="@string/app_name" >
+        </activity>
+
+
+
+        <activity android:name=".customerpage" android:label="@string/app_name"></activity>
+
+       <activity android:name=".Customer_home" android:label="@string/app_name"></activity>
+
+
+
+        <activity android:name=".C_Signup" android:label="@string/app_name"></activity>
+        <activity android:name=".RequestPage" android:label="@string/app_name"></activity>
+        <activity android:name=".Admin_Home" android:label="@string/app_name"></activity>
+        <activity android:name=".CarUpdateInfo" android:label="@string/app_name"></activity>
+        <activity android:name=".A_Signup"  android:label="@string/app_name"></activity>
+        <activity android:name=".ViewInformation" android:label="@string/app_name"></activity>
+        <activity android:name=".ErrorList" android:label="@string/app_name"></activity>
+
+    </application>
+
+</manifest>
