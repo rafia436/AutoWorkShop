@@ -48,6 +48,9 @@
         <activity android:name=".A_Signup"  android:label="@string/app_name"></activity>
         <activity android:name=".ViewInformation" android:label="@string/app_name"></activity>
         <activity android:name=".ErrorList" android:label="@string/app_name"></activity>
+        <activity android:name=".EditErrors" android:label="@string/app_name"></activity>
+        <activity android:name=".Remarks" android:label="@string/app_name"></activity>
+
 
     </application>
 

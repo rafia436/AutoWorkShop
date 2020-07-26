@@ -1,6 +1,8 @@
 package com.example.autoworkshop;
 
 import android.content.Context;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,17 +16,47 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-class Cars{
+class Cars implements Parcelable {
     String name;
     boolean isselected=false;
+
+    String unit,price,qty;
 
 
     public Cars(String name, boolean isselected){
         super();
         this.name = name;
         this.isselected = isselected;
+
     }
 
+    public Cars() {
+
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getQty() {
+        return qty;
+    }
+
+    public void setQty(String qty) {
+        this.qty = qty;
+    }
 
     public String getName() {
         return name;
@@ -41,6 +73,33 @@ class Cars{
     public void setIsselected(boolean isselected) {
         this.isselected = isselected;
     }
+
+    protected Cars(Parcel parcel){
+        name = parcel.readString();
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(name);
+
+    }
+
+    public static final Creator<Cars> CREATOR = new Creator<Cars>() {
+        @Override
+        public Cars createFromParcel(Parcel parcel) {
+            return new Cars(parcel);
+        }
+
+        @Override
+        public Cars[] newArray(int i) {
+            return new Cars[i];
+        }
+    };
 }
 public class CarAdapter extends ArrayAdapter<Cars> {
 
