@@ -111,7 +111,7 @@
             android:translationY="40dp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/forgotpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"

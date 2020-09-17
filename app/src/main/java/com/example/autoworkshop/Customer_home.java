@@ -106,6 +106,9 @@ Context mContext;
             }
         });
 
+
+
+
         CollectionReference collectionReference = firestore.collection("users").document(userID.getUid()).collection("Registeration Cards");
         final DocumentReference documentReference = collectionReference.document("Request");
         Query query = collectionReference;

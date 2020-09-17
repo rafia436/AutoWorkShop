@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -25,6 +26,8 @@ public class customerpage extends AppCompatActivity {
     private Button btn;
     private Button signupBtn;
     private EditText username,password;
+    private TextView forgetpass;
+
     FirebaseDatabase database;
     DatabaseReference users;
     FirebaseAuth fAuth;
@@ -37,7 +40,16 @@ public class customerpage extends AppCompatActivity {
         signupBtn = (Button) findViewById(R.id.C_SignupBtn);
         username = (EditText)findViewById(R.id.c_username);
         password = (EditText)findViewById(R.id.C_Password);
+        forgetpass=(TextView) findViewById(R.id.ForgotPass);
         fAuth=FirebaseAuth.getInstance();
+
+        forgetpass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(customerpage.this,forget_password.class);
+                startActivity(intent);
+            }
+        });
 
         signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override

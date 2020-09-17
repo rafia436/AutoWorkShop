@@ -64,29 +64,6 @@
             android:inputType="number" />
 
         <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:fontFamily="@font/aldrich"
-            android:text="Inspection Form"
-            android:textColor="#0B0B0B"
-            android:textSize="18sp" />
-
-        <ImageButton
-            android:id="@+id/Choose"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            app:srcCompat="@android:drawable/ic_menu_upload" />
-
-        <TextView
-            android:id="@+id/Link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#F42D2D" />
-
-        <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

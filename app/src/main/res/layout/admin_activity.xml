@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:fontFamily="@font/aldrich"
-            android:text="Username"
+            android:text="Email"
             android:textColor="#040303"
             android:textSize="24sp"
             android:translationX="20dp"
@@ -69,7 +69,7 @@
             android:translationY="20dp" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/ForgetPas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autoLink="all"
@@ -91,28 +91,6 @@
             android:textSize="18sp"
             android:translationX="20dp"
             android:translationY="50dp" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/aldrich"
-            android:text="OR"
-            android:textColor="#090909"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:translationX="20dp"
-            android:translationY="55dp" />
-
-        <Button
-            android:id="@+id/a_signup"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/aldrich"
-            android:text="Sign up"
-            android:textSize="18sp"
-            android:translationX="20dp"
-            android:translationY="60dp" />
 
     </LinearLayout>
 

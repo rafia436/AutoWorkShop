@@ -52,9 +52,11 @@
             android:id="@+id/C_Username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#E4E0E0"
             android:ems="10"
             android:inputType="textPersonName"
-            android:translationX="20dp" />
+            android:translationX="20dp"
+            android:translationY="2dp" />
 
         <TextView
             android:id="@+id/textView"
@@ -65,15 +67,18 @@
             android:text="Email Address"
             android:textColor="#070707"
             android:textSize="24sp"
-            android:translationX="20dp" />
+            android:translationX="20dp"
+            android:translationY="20dp" />
 
         <EditText
             android:id="@+id/C_Email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#E4E0E0"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:translationX="20dp" />
+            android:translationX="20dp"
+            android:translationY="20dp" />
 
         <TextView
             android:id="@+id/textView3"
@@ -84,18 +89,21 @@
             android:text="Password"
             android:textColor="#0C0C0C"
             android:textSize="24sp"
-            android:translationX="20dp" />
+            android:translationX="20dp"
+            android:translationY="40dp" />
 
         <EditText
             android:id="@+id/C_Password"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#E4E0E0"
             android:ems="10"
             android:inputType="textPassword"
-            android:translationX="20dp" />
+            android:translationX="20dp"
+            android:translationY="40dp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/forgotpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
@@ -103,15 +111,18 @@
             android:text="Phone Number"
             android:textColor="#130C0C"
             android:textSize="24sp"
-            android:translationX="20dp" />
+            android:translationX="20dp"
+            android:translationY="70dp" />
 
         <EditText
             android:id="@+id/Phone"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#E4E0E0"
             android:ems="10"
             android:inputType="phone"
-            android:translationX="20dp" />
+            android:translationX="20dp"
+            android:translationY="70dp" />
 
         <Button
             android:id="@+id/button"
@@ -134,9 +145,9 @@
             android:layout_height="61dp"
             android:background="#F11313"
             android:tint="#FFFFFF"
+            android:translationX="230dp"
             android:translationY="79dp"
-            app:srcCompat="@android:drawable/ic_menu_send"
-            tools:translationX="230dp" />
+            app:srcCompat="@android:drawable/ic_menu_send" />
 
     </LinearLayout>
 

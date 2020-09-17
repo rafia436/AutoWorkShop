@@ -65,7 +65,7 @@
             android:textColor="#040303"
             android:textSize="24sp"
             android:translationX="20dp"
-            tools:translationY="20dp" />
+            android:translationY="20dp" />
 
         <EditText
             android:id="@+id/C_Password"
@@ -75,20 +75,19 @@
             android:ems="10"
             android:inputType="textPassword"
             android:shadowColor="#BAB6B6"
+            android:translationX="20dp"
             android:translationY="20dp"
             tools:translationX="20dp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/ForgotPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autoLink="all"
             android:clickable="true"
-            android:fadingEdge="vertical"
             android:fontFamily="@font/aldrich"
             android:text="Forgot your password?"
+            android:textColor="#514949"
             android:textSize="18sp"
-            android:textStyle="bold"
             android:translationX="20dp"
             android:translationY="40dp" />
 

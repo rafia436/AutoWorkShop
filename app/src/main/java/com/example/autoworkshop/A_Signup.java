@@ -43,6 +43,7 @@ public class A_Signup extends AppCompatActivity {
         A_Phone = findViewById(R.id.A_Phone);
         btn = (ImageButton) findViewById(R.id.A_registerbtn);
 
+
         fAuth = FirebaseAuth.getInstance();
         Fstore = FirebaseFirestore.getInstance();
         btn.setOnClickListener(new View.OnClickListener() {

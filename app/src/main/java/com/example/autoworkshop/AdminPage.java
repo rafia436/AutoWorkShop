@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -17,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AdminPage extends AppCompatActivity {
     Button signin, signup;
+    private TextView forgetpass;
     EditText A_username, a_passwrd;
     private FirebaseAuth fAuth;
 
@@ -25,9 +27,17 @@ public class AdminPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_activity);
         signin = (Button) findViewById(R.id.a_signin);
-        signup = (Button) findViewById(R.id.a_signup);
+
         A_username=(EditText) findViewById(R.id.a_username) ;
         a_passwrd = (EditText) findViewById(R.id.a_pass) ;
+        forgetpass=(TextView) findViewById(R.id.ForgetPas);
+        forgetpass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminPage.this,forget_password.class);
+                startActivity(intent);
+            }
+        });
         fAuth = FirebaseAuth.getInstance();
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,13 +80,7 @@ public class AdminPage extends AppCompatActivity {
 
 
 
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AdminPage.this, A_Signup.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 }

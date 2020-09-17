@@ -79,19 +79,22 @@ public class CarUpdateInfo extends AppCompatActivity {
         carname = (EditText) findViewById(R.id.EditCarName);
         carnumber = (EditText) findViewById(R.id.EditCarNumber);
         submit = (Button) findViewById(R.id.submit);
-        FormLink = (TextView) findViewById(R.id.Link);
-        choose = (ImageButton) findViewById(R.id.Choose);
+
+
         carButton=(ImageButton) findViewById(R.id.ChooseCar);
         carimage = (ImageView) findViewById(R.id.Carimage);
 
 //        Cname.setText(bundle.getString("Name"));
 
 
-        ID = bundle.getString("ID");
+
         storageReference = FirebaseStorage.getInstance().getReference();
 
        // imgs = new imageList();
         fstore = FirebaseFirestore.getInstance();
+        if(bundle!=null) {
+            ID = bundle.getString("ID");
+        }
 
    collectionReference = fstore.collection("users").document(ID).collection("Registeration Cards");
    collectionReference.document("Request").get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -132,13 +135,7 @@ public class CarUpdateInfo extends AppCompatActivity {
                   return;
               }
 
-              if(filepath == null){
-                  FormLink.setError("Image Required");
-                  FormLink.requestFocus();
-                  return;
 
-
-              }
                 if(carimagepath == null){
                     return;
 
@@ -164,12 +161,7 @@ public class CarUpdateInfo extends AppCompatActivity {
           }
       });
 
-      choose.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-              ShowFileChooser();
-          }
-      });
+
 
       carButton.setOnClickListener(new View.OnClickListener() {
           @Override
@@ -186,49 +178,13 @@ public class CarUpdateInfo extends AppCompatActivity {
         startActivityForResult(intent, PICK_CAR_REQUEST);
     }
 
-    private void ShowFileChooser(){
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent,PICK_IMAGE_REQUEST);
-    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null){
-            filepath = data.getData();
 
-
-            if(filepath!=null){
-                FormLink.setError(null);
-
-
-                final StorageReference ref = storageReference.child("uploads");
-
-                String filename = getFilename(filepath);
-                Toast.makeText(CarUpdateInfo.this,filename + " is the text", Toast.LENGTH_SHORT).show();
-
-                FormLink.setText(filename);
-
-                ref.putFile(filepath).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                            @Override
-                            public void onSuccess(Uri uri) {
-                                Toast.makeText(CarUpdateInfo.this,uri + " is the link", Toast.LENGTH_SHORT).show();
-                                Uri downloaduri = uri;
-                                String download = downloaduri.toString();
-                                saveUploadedToFireStore(download);
-                            }
-                        });
-
-                    }
-                });
-            }
-        }
-        else if(requestCode==PICK_CAR_REQUEST && resultCode == RESULT_OK && data!=null && data.getData()!=null){
+        if(requestCode==PICK_CAR_REQUEST && resultCode == RESULT_OK && data!=null && data.getData()!=null){
             carimagepath = data.getData();
             if(carimagepath!=null){
                 Picasso.with(this)
@@ -254,13 +210,7 @@ public class CarUpdateInfo extends AppCompatActivity {
         }
     }
 
-    private void saveUploadedToFireStore(String download){
-        Map<String , Object> Form = new HashMap<>();
-        Form.put("InspectionForm", download);
-        DocumentReference docref = collectionReference.document("Request");
-        docref.update(Form);
 
-    }
     private void saveCarImage(String imageURI){
         Map<String, Object> Car = new HashMap<>();
         Car.put("CarImage", imageURI);
